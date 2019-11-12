@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+    <title>Contador de generala</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Contador de generala</h1>
+        <div class="container-fluid">
+
+          <div id="elegirPartida">
+            <form action="" onsubmit="elegirJug2()">
+              <button id="partida2">
+                  <input type="submit" value="2 jugadores" />
+              </button>
+            </form>
+            <form action="" onsubmit="elegirJug3()">    
+              <button id="partida3">
+                  <input type="submit" value="3 jugadores" />
+              </button>
+            </form>
+            <form action="" onsubmit="elegirJug4()">
+              <button id="partida4">
+                  <input type="submit" value="4 jugadores" />
+              </button> 
+            </form>
+          </div>
+               
+           <form action="" onsubmit="on2()" id="participantes2">
+            <div class="row" id="jug1">
+              <div class="col-md-1" style="background-color:lavender;"><input type="text" name="nombre" placeholder="Jugador 1" id="1nombre2" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="5" placeholder="1" id="1uno2" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="10" placeholder="2" id="1dos2" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="15" placeholder="3" id="1tres2" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="20" placeholder="4" id="1cuatro2" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="25" placeholder="5" id="1cinco2" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="30" placeholder="6" id="1seis2" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Escalera" id="1escalera2" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Full" id="1full2" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Pocker" id="1pocker2" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Generala" id="1generala2" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="2° Generala" id="1generala22" required/></div>
+                </div>
+                  
+                <div class="row" style="margin-top: 2rem;" id="jug2">
+                  <div class="col-md-1" style="background-color:lavender;"><input type="text" name="nombre" placeholder="Jugador 2" id="2nombre2" /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="5" placeholder="1" id="2uno2" required /></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="10" placeholder="2" id="2dos2" required /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="15" placeholder="3" id="2tres2" required /></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="20" placeholder="4" id="2cuatro2" required /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="25" placeholder="5" id="2cinco2" required /></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="30" placeholder="6" id="2seis2" required /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Escalera" id="2escalera2" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Full" id="2full2" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Pocker" id="2pocker2" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Generala" id="2generala2" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="2° Generala" id="2generala22" required/></div>
+                </div>
+
+            <button id="botonfin2">
+              <input type="submit" value="Finalizar" />
+            </button>
+          </form>
+
+          <div id="hiddenDiv2">
+            <h2 id="h212"><b>Ganador:</b></h2>
+            <div class="boton" id="revancha">
+                <a href="index.html" style="text-decoration: none"><h3>Revancha</h3>
+                </a>
+            </div>
+          </div>
+
+          <form action="" onsubmit="on3()" id="participantes3">
+            <div class="row" id="jug1">
+              <div class="col-md-1" style="background-color:lavender;"><input type="text" name="nombre" placeholder="Jugador 1" id="1nombre3" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="5" placeholder="1" id="1uno3" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="10" placeholder="2" id="1dos3" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="15" placeholder="3" id="1tres3" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="20" placeholder="4" id="1cuatro3" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="25" placeholder="5" id="1cinco3" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="30" placeholder="6" id="1seis3" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Escalera" id="1escalera3" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Full" id="1full3" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Pocker" id="1pocker3" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Generala" id="1generala3" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="2° Generala" id="1generala23" required/></div>
+                </div>
+                  
+                <div class="row" style="margin-top: 2rem;" id="jug2">
+                  <div class="col-md-1" style="background-color:lavender;"><input type="text" name="nombre" placeholder="Jugador 2" id="2nombre3" /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="5" placeholder="1" id="2uno3" required /></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="10" placeholder="2" id="2dos3" required /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="15" placeholder="3" id="2tres3" required /></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="20" placeholder="4" id="2cuatro3" required /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="25" placeholder="5" id="2cinco3" required /></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="30" placeholder="6" id="2seis3" required /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Escalera" id="2escalera3" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Full" id="2full3" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Pocker" id="2pocker3" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Generala" id="2generala3" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="2° Generala" id="2generala23" required/></div>
+                </div>
+
+                <div class="row" style="margin-top: 2rem;" id="jug3">
+                    <div class="col-md-1" style="background-color:lavender;"><input type="text" name="nombre" placeholder="Jugador 3" id="3nombre3" /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="5" placeholder="1" id="3uno3" required /></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="10" placeholder="2" id="3dos3" required /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="15" placeholder="3" id="3tres3" required /></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="20" placeholder="4" id="3cuatro3" required /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="25" placeholder="5" id="3cinco3" required /></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="30" placeholder="6" id="3seis3" required /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Escalera" id="3escalera3" required/></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Full" id="3full3" required/></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Pocker" id="3pocker3" required/></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Generala" id="3generala3" required/></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="2° Generala" id="3generala23" required/></div>
+                </div>
+
+            <button id="botonfin3">
+              <input type="submit" value="Finalizar" />
+            </button>
+          </form>
+
+          <div id="hiddenDiv3">
+            <h2 id="h213"><b>Ganador:</b></h2>
+            <div class="boton" id="revancha">
+                <a href="index.html" style="text-decoration: none"><h3>Revancha</h3>
+                </a>
+            </div>
+          </div>
+
+              <form action="" onsubmit="on4()" id="participantes4">
+                <div class="row" id="jug1">
+                  <div class="col-md-1" style="background-color:lavender;"><input type="text" name="nombre" placeholder="Jugador 1" id="1nombre4" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="5" placeholder="1" id="1uno4" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="10" placeholder="2" id="1dos4" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="15" placeholder="3" id="1tres4" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="20" placeholder="4" id="1cuatro4" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="25" placeholder="5" id="1cinco4" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="30" placeholder="6" id="1seis4" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Escalera" id="1escalera4" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Full" id="1full4" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Pocker" id="1pocker4" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Generala" id="1generala4" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="2° Generala" id="1generala24" required/></div>
+                </div>
+                  
+                <div class="row" style="margin-top: 2rem;" id="jug2">
+                  <div class="col-md-1" style="background-color:lavender;"><input type="text" name="nombre" placeholder="Jugador 2" id="2nombre4" /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="5" placeholder="1" id="2uno4" required /></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="10" placeholder="2" id="2dos4" required /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="15" placeholder="3" id="2tres4" required /></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="20" placeholder="4" id="2cuatro4" required /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="25" placeholder="5" id="2cinco4" required /></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="30" placeholder="6" id="2seis4" required /></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Escalera" id="2escalera4" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Full" id="2full4" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Pocker" id="2pocker4" required/></div>
+                  <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Generala" id="2generala4" required/></div>
+                  <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="2° Generala" id="2generala24" required/></div>
+                </div>
+
+                <div class="row" style="margin-top: 2rem;" id="jug3">
+                    <div class="col-md-1" style="background-color:lavender;"><input type="text" name="nombre" placeholder="Jugador 3" id="3nombre4" /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="5" placeholder="1" id="3uno4" required /></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="10" placeholder="2" id="3dos4" required /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="15" placeholder="3" id="3tres4" required /></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="20" placeholder="4" id="3cuatro4" required /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="25" placeholder="5" id="3cinco4" required /></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="30" placeholder="6" id="3seis4" required /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Escalera" id="3escalera4" required/></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Full" id="3full4" required/></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Pocker" id="3pocker4" required/></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Generala" id="3generala4" required/></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="2° Generala" id="3generala24" required/></div>
+                </div>
+
+                <div class="row" style="margin-top: 2rem;" id="jug4">
+                    <div class="col-md-1" style="background-color:lavender;"><input type="text" name="nombre" placeholder="Jugador 4" id="4nombre4" /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="5" placeholder="1" id="4uno4" required /></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="10" placeholder="2" id="4dos4" required /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="15" placeholder="3" id="4tres4" required /></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="20" placeholder="4" id="4cuatro4" required /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" min="0" max="25" placeholder="5" id="4cinco4" required /></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" min="0" max="30" placeholder="6" id="4seis4" required /></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Escalera" id="4escalera4" required/></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Full" id="4full4" required/></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="Pocker" id="4pocker4" required/></div>
+                    <div class="col-md-1" style="background-color:lavender;"><input type="number" placeholder="Generala" id="4generala4" required/></div>
+                    <div class="col-md-1" style="background-color:lavenderblush;"><input type="number" placeholder="2° Generala" id="4generala24" required/></div>
+                </div>
+
+                <button id="botonfin4">
+                  <input type="submit" value="Finalizar" />
+                </button>
+              </form>
+
+              <div id="hiddenDiv4">
+                <h2 id="h214"><b>Ganador:</b></h2>
+                <div class="boton" id="revancha">
+                    <a href="index.html" style="text-decoration: none"><h3>Revancha</h3>
+                    </a>
+                </div>
+              </div>
+
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
