@@ -1,0 +1,384 @@
+*{margin: 0rem; padding: 0rem; box-sizing: border-box; }
+
+@media only screen and (min-width : 760px) {
+
+#container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+body {
+    background-image:url(dados2.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#elegirPartida {
+    display: flex;
+    justify-content: center;
+}
+
+#partida2 {
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+#partida3 {
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+#partida4 {
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+#participantes2 {
+    display: none;
+}
+
+#participantes3 {
+    display: none;
+}
+
+#participantes4 {
+    display: none;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding: 0.2rem;
+}
+button {
+    margin-top: 1rem;
+    border: none;
+    background-color: transparent;
+}
+
+#botonfin4 {
+    display: none;
+}
+
+#botonfin2 {
+    display: none;
+}
+
+#botonfin3 {
+    display: none;
+}
+
+#hiddenDiv2 {
+    display: none;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    position: absolute;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#hiddenDiv2 h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#hiddenDiv2 h3 {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+#hiddenDiv3 {
+    display: none;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    position: absolute;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#hiddenDiv3 h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#hiddenDiv3 h3 {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+#hiddenDiv4 {
+    display: none;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    position: absolute;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#hiddenDiv4 h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#hiddenDiv4 h3 {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+}
+
+@media only screen and (max-width : 760px) {
+
+
+    body {
+        background-image:url(dados2.jpg);
+        background-size: contain;
+    }
+    
+    h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        margin-left: 0rem;
+        padding-left: 0rem;
+        font-size: 3rem;
+        
+    }
+
+    #participantes2 {
+        display: none;
+    }
+    
+    #participantes3 {
+        display: none;
+    }
+    
+    #participantes4 {
+        display: none;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    input[type="submit"] {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-size: 1rem;
+        margin-top: 0.6rem;
+        font-family: sans-serif;
+        font-weight: 900;
+        padding: 0.2rem;
+    }
+
+    .col-md-1 {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    button {
+        margin-top: 2rem;
+        border: none;
+        background-color: transparent;
+        margin-left: 42%;
+    }
+
+    #botonfin4 {
+        display: none;
+        margin-bottom: 2rem;
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    #botonfin2 {
+        display: none;
+        margin-bottom: 2rem;
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    #botonfin3 {
+        display: none;
+        margin-bottom: 2rem;
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    #elegirPartida {
+        display: block;
+    }
+
+    #partida2 {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    #partida3 {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    #partida4 {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+#hiddenDiv2 {
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#hiddenDiv2 h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#hiddenDiv2 h3 {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+#hiddenDiv3 {
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#hiddenDiv3 h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#hiddenDiv3 h3 {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+#hiddenDiv4 {
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#hiddenDiv4 h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#hiddenDiv4 h3 {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+}
